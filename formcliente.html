@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleforms.css">
+    <title>Cadastro de Clientes|KM</title>
+    <style>
+.wave{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+}
+    </style>
+
+</head>
+ 
+
+<body>
+    <img class="wave" src="img/wave.png">
+	
+
+    <div id="main-container">
+        <a href="painel.html" class="btn">VOLTAR</a>
+    <h1>CADASTRO DE CLIENTES</h1>
+    <form id="" form action="salvarcliente.php" method = "post">
+      <div class="half-box spacing">
+ 
+          <label for="nome_completo">Nome</label>
+          <input type="text" name="Nome" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+      </div>
+    <div class="half-box">
+        <label for="rg">RG</label>
+        <input type="number" name="RG" id="lastname" placeholder="RG">
+    </div>
+    <div class="half-box">
+        <label for="cpf">CPF</label>
+        <input type="number" name="CPF" id="lastname" placeholder="CPF" >
+    </div>
+    <div class="half-box">
+        <label for="telefone">Telefone</label>
+        <input type="number" name="Telefone" id="lastname" placeholder="Telefone" >
+    </div>
+    <div class="full-box">
+        <label for="nome_pai">Nome do Pai</label>
+        <input type="text" name="Pai" id="email" placeholder="Nome do Pai" data-min-length="2" >
+      </div>
+      <div class="full-box">
+        <label for="mae">Nome da Mãe</label>
+        <input type="text" name="Mãe" id="email" placeholder="Nome da Mãe" data-min-length="2" >
+      </div>
+      <div class="full-box">
+        <label for="email">E-mail</label>
+        <input type="email" name="Email" id="email" placeholder="Digite seu e-mail" data-min-length="2">
+      </div>
+        <div class="full-box">
+        <input id="btn-submit" type="submit" value="CADASTRAR">
+      </div>
+    </form>
+  </div>
+  <p class="error-validation template"></p>
+ 
+</body>
+</html>

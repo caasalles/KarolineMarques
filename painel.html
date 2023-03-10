@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Painel de Controle </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+body{
+    margin: 0;
+    background-color: rgba(180, 235, 209, 0.623);
+}
+body * {
+    box-sizing: border-box;
+
+}
+#total{
+background-size: cover;
+width:100%;
+align-items: baseline;
+justify-content: center;
+padding: 10px;
+min-height: 100vh;
+margin:0;
+}
+            
+#funcoes{
+width: 100vw;
+height: 100vh;
+display:flex;
+align-items: center;
+justify-content:space-between; 
+margin: 0 auto;              
+
+}
+
+#ico1, #ico2, #ico3{
+width: 100%;
+float: left;
+font-family: Tahoma;
+margin-left:11%;
+margin-top:-15%;
+}
+
+#ico1, #ico2, #ico3{
+
+ width:100%;
+}
+
+#total .btn{
+    padding: 2px 19px;
+    background:#ffffff;
+    color:#6B8E23;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    float: right;
+}
+
+#total .btn:hover{
+    background: #ffffff;
+    transform: scale(1.1);
+    border: 1px solid #6B8E23;
+
+}
+@media only screen and (max-width:950px){
+    #funcoes{
+    display: grid;
+    width: 100%;
+    }
+    #ico1, #ico2, #ico3{
+        padding: 45px;
+        margin: 0 auto;
+        margin-left: 105%;
+    
+    }
+ 
+}
+@media only screen and (max-width:600px){
+    #funcoes{
+    display: grid;
+    width: 100%;
+    height: auto;
+    }
+    #ico1, #ico2, #ico3{
+        padding: 45px;
+        margin: 0 auto;
+       
+    
+    }
+}
+@media only screen and (max-width:500px){
+
+#funcoes{
+display: grid;
+width: 100%;
+height: auto;
+}
+#ico1, #ico2, #ico3{
+    padding: 45px;
+    margin: 0 auto;
+   
+
+}
+}
+@media only screen and (max-width:414px){
+
+#funcoes{
+display: grid;
+width: 100%;
+height: auto;
+margin: 62px;
+}
+#ico1, #ico2, #ico3{
+    padding: 45px;
+    margin: 0 auto;
+   
+
+}
+}
+
+@media only screen and (max-width:300px){
+
+    #funcoes{
+    display: grid;
+    width: 100%;
+    height: auto;
+    }
+    #ico1, #ico2, #ico3{
+        padding: 45px;
+        margin: 0 auto;
+       
+    
+    }
+
+}
+.wave{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+}
+.imagem:hover{
+    box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+    border: 1% solid transparent;
+    transform: translateY(-3px);
+}
+.titulo{
+    color: #000;
+    font-weight: 300;
+    text-align: center;
+    font-size: 20px;
+}
+   
+</style>
+</head>
+
+    <body>
+        <img class="wave" src="wave.png">
+
+        <div id = "total">
+            <a href="login.php" class="btn">SAIR</a>
+
+
+               <div id="funcoes">
+                   
+                    <div id="ico1">
+                        <a href="formfuncionario.html"><img src="img/funcionario.png " width="120" height="120"> </a>
+                        <a href="listarfunc.php"><img src="img/lista.png" width="120" height="120"> </a>
+                    <h3 class="titulo">Funcionários | Listar</h3>
+                    </div>
+
+                    <div id="ico2">
+                        <a href="formcliente.html"><img src="img/clientes.png" width="120" height="120"> </a>
+                        <a href="listarcliente.php"><img src="img/lista.png" width="120" height="120"> </a>
+                         <h3 class="titulo"> Clientes | Listar </h3>
+                    </div>
+
+                    <div id="ico3">
+                            <a href="formproduto.html"><img src="img/produtos.png" width="120" height="120"> </a>
+                            <a href="listarproduto.php"><img src="img/lista.png" width="120" height="120"> </a>
+                           <h3 class="titulo"> Produtos | Listar </h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+    </body>
+
+</html>

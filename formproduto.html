@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cadastro de Produtos | KM</title>
+  <link rel="stylesheet" href="styleforms.css">
+  <style>
+    .wave{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+}
+  </style>
+</head>
+<body>
+    <img class="wave" src="img/wave.png">
+    
+    <div id="main-container">
+        <a href="painel.html" class="btn">VOLTAR</a>
+    <h1>CADASTRO DE PRODUTOS</h1>
+    <form id="" form action="salvarproduto.php" method = "post">
+      <div class="half-box spacing">
+        <label for="nome_completo">Produto:</label>
+        <input type="text" name="Produto" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+      </div>
+    <div class="half-box">
+        <label for="rg">Preço:</label>
+        <input type="number" name="Preco" id="lastname">
+    </div>
+    <div class="half-box">
+        <label for="cpf">Disponibilidade</label>
+        <input type="number" name="Disponibilidade" id="lastname"  >
+    </div>
+    <div class="half-box">
+        <label for="nome_pai">Código</label>
+            <input type="number" name="Codigo" id="email">
+    </div>
+    
+      <div class="full-box">
+        <input id="btn-submit" type="submit" value="CADASTRAR">
+      </div>
+    </form>
+  </div>
+  <p class="error-validation template"></p>
+
+</body>
+</html>

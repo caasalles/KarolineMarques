@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karoline Marques</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+<style>*{
+    margin: 0; padding: 0; box-sizing: border-box;
+
+}
+
+
+.conteiner{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content:center;
+   
+}
+.conteiner .card{
+    position: relative;
+    cursor: pointer;
+}
+.conteiner .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.conteiner .card .face.face1{
+    position: relative;
+    background: #83a146;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+
+}
+.conteiner .card:hover .face.face1{
+
+    background-color: #608020;
+    transform: translateY(0);
+
+    
+}
+.conteiner .card .face.face1 .content{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.conteiner .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.conteiner .card .face.face1 .content img{
+    border-radius: 10px;
+    max-width: 120px;
+    justify-content: center;
+}
+
+
+.conteiner .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+.conteiner .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.644);
+    transform: translateY(-100px);
+
+}
+.conteiner .card:hover .face.face2{
+    transform: translateY(0);
+}
+.conteiner .card .face.face2 content a{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color:#333;
+    padding: 5px;
+    border: 1px solid #333;
+    transition: 0.4s;
+}
+.conteiner .card .face.face2 content a:hover{
+    border-radius: 10px;
+    background: #ffffff;
+    color: #fff;
+}
+.content .p-card{
+    font-size: 12px;
+}
+
+@media (max-width:1200px) {
+
+    .conteiner{
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+}
+.-btn{
+    padding: 30px 50px;
+    background: #6B8E23;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 300;
+    transition: all 0.5s;
+    margin-left: 40%;
+    margin-top: -30%;
+    
+    
+ 
+}
+.-btn:hover {
+    background:#fff;
+    color: #6B8E23;
+    border: 1px solid #6B8E23;
+    
+}
+
+
+</style>
+</head>
+<body>
+    <!--HEADER-->
+<header>
+    <a href="#" class="logo">Karoline Marques</a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+        <li><a href="serviços.html">SERVIÇOS</a></li>
+        <li><a href="login.php">LOGIN</a></li>
+    </ul>
+    </header>
+    <!--Home section-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>NOSSOS SERVIÇOS</h1>
+            <p> </p>
+            
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    
+
+    <div class="text">
+        <h2> ESPECIALIDADES</h2>
+    </div>
+ <!-- CARD -->
+ <div class="conteiner">
+    <div class="card">            
+        <div class="face face1">
+            <div class="content">
+                <img src="img/plano.png" alt="">
+                <h3>PLANO NUTRICIONAL</h3>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <p class="p-card">Enviamos ao paciente o plano nutricional de acordo com suas necessidades e conforme tudo que foi conversado na consulta. E acompanho o paciente dia a dia pelo whatsapp, se está se adaptando ao plano, e se houver necessidade podemos fazer alterações</p>
+                <br>
+               
+            </div>
+        </div>
+
+    </div>
+    <div class="card">            
+        <div class="face face1">
+            <div class="content">
+                <img src="img/Emagrecimento.png" alt="">
+                <h3>EMAGRECIMENTO</h3>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <p class="p-card">Uma das causas do sobrepeso é o sedentarismo e alimentação inadequada, com aumento do consumo de produtos industrializados e baixo consumo de frutas, verduras e fibras no seu dia a dia. A melhor maneira para perder peso é seguir um plano alimentar com hábitos mais saudáveis e a ingestão equilibrada de calorias ao longo do dia.</p>
+                
+              
+            </div>
+        </div>
+        </div>
+        <div class="card">            
+            <div class="face face1">
+                <div class="content">
+                    <img src="img/reed.png" alt="">
+                    <h3>REEDUCAÇÃO</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p class="p-card">A reeducação alimentar é a mudança do hábito alimentar, onde a pessoa reaprende sobre o como manter uma alimentação saudável e variada, ajudando a manter a saúde e prevenir o surgimento de doenças causadas pela má alimentação, como diabetes, pressão alta e obesidade.</p>
+                    
+                  
+                </div>
+            </div>
+            </div>
+            <div class="card">            
+                <div class="face face1">
+                    <div class="content">
+                        <img src="img/fito.png" alt="">
+                        <h3>FITOTERAPIA</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p class="p-card">A fitoterapia é o tratamento baseado no uso de plantas medicinais. Em diversas situações, as plantas medicinais podem ser utilizadas para prevenção, promoção ou recuperação da saúde, na forma de chás (infusões), gotas (tinturas) ou cápsulas (extratos) Em muitos países a fitoterapia é a base de tratamentos para a saúde, como na China e índia</p>
+                    
+                    
+                    </div>
+                </div>
+                </div>
+</div>
+
+<br>
+<br>
+<br>
+<a href="formulario.html" class="-btn">Agende a sua consulta</a>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+    
+     </section>
+
+        <!--FOOTER-->
+        <footer>
+            <div class="contato">
+                <h2 style="color:#6B8E23" class="Dra">Karoline Marques<a href="index.html"></a></h2>
+                    <p>(21) 96709 - 7640</p>
+                    <p>@nutrikarolinemarques</p>   
+            </div>
+            <div class="autor">
+            <p>Desenvolvido por Carolina Salles. © Copyright 2023; Todos os direitos reservados </p>
+            </div>
+        </footer>
+
+
+    <!--JAVASCRIPT-->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
